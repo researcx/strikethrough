@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>strikethrough</title>
+    </head>
+    <body>
+        <p>this page lets you add and remove text strikethrough</p>
+
+        <textarea id="textfield" style="width: 100%;" rows="10"></textarea>
+
+        <button onclick="strikeThrough()">add it</button>
+        <button onclick="unstrikeThrough()">remove it</button>
+    </body>
+    <script>
+        function unstrikeThrough() {
+        var text = document.getElementById("textfield").value; 
+        var res = text.replace(/\u0336/gi, "");
+        document.getElementById("textfield").value = res;
+        }
+        function strikeThrough() {
+            var text = document.getElementById("textfield").value; 
+            var res = text.split('').map(char => char + '\u0336').join('')
+            document.getElementById("textfield").value = res;
+        }
+    </script>
+</html>
