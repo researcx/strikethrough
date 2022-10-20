@@ -1,1 +1,1 @@
-# [https://unendingpattern.github.io/strikethrough/](https://unendingpattern.github.io/strikethrough/)
+# [https://researcx.github.io/strikethrough/](https://researcx.github.io/strikethrough/)
